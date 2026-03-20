@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+:root {
+    --bg-url: url(./assets/imagemPrincipal.png);
+}
+
+body{
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    padding: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+
+.actions a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
