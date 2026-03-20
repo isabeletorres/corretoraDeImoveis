@@ -1,52 +1,107 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+
+    :root {
+        --bg-url: url(./assets/imagemPrincipal.png);
+    }
+
+    body{
+        background: var(--bg-url) no-repeat top center/cover;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        color:rgb(83, 35, 3);
+    }
+
+    .header {
+        padding: 35px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box{
+
+        padding: 10px 20px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .logo {
+    font-weight: bold;
+    }
+
+
+    .menu a {
+    text-decoration: none;
+    font-size: 14px;
+    color:rgb(83, 35, 3);
+    }
+
+
+    .actions a {
+    text-decoration: none;
+    font-size: 14px;
+    color:rgb(83, 35, 3);
+    }
+
+    .twoPart{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50px;
+    }
+
+    .information{
+
+        margin-bottom: 10px;
+        
+    }
+    .information h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+        font-weight: normal;
+        color: rgb(83, 35, 3);
+        margin: 0;
 }
+    }
+    .information sup{
+        font-size: 60%; 
+        top: -1em;
+    }
+    .litleInformation{
+        padding: 10px 15px; 
+        margin-bottom: 20px; 
+    }
 
-:root {
-    --bg-url: url(./assets/imagemPrincipal.png);
-}
+    .litleInformation p {
+        font-family: serif; 
+        font-size: 16px;
+        color: rgb(83, 35, 3);
+        margin: 0;
+    }
+    button {
+        display: inline-block; 
 
-body{
-    background: var(--bg-url) no-repeat top center/cover;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-}
+        padding: 10px 30px; 
+        background-color: transparent; 
+        color:White;
+        font-family: Arial, sans-serif; 
+        font-weight: bold;
+        text-decoration: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        background-color: rgb(83, 35, 3); 
+    }
 
-.header {
-    padding: 35px;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.box{
-
-    padding: 10px 20px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.logo {
-  font-weight: bold;
-}
-
-
-.menu a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-}
-
-
-.actions a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-}
+    button:hover {
+    
+    color: white;
+    }
